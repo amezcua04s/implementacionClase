@@ -13,14 +13,12 @@
 <body>
 
     <header>
-
         @include('partials.nav-bar')
-
+        @include('partials.validation-errors')
     </header>
 
     <div class="container">
         @yield('content')
-        
 
     </div>
 </body>
