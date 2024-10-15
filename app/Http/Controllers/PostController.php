@@ -33,7 +33,10 @@ class PostController extends Controller
     //dd($request);
     // echo($request);
     //dd($request->validated());
-    Post::create($request->validated());
+    $post = $request->validated();
+    $post['posted'] == 'on' ? $post['posted'] = 'yes' : $post['posted'] = 'no';
+
+    Post::create($post);
 
     }
 
