@@ -15,6 +15,7 @@
     <header>
         @include('partials.nav-bar')
         @include('partials.validation-errors')
+        @include('partials.messages')
     </header>
 
     <div class="container">

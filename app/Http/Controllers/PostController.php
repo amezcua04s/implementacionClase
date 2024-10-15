@@ -37,6 +37,8 @@ class PostController extends Controller
     $post['posted'] == 'on' ? $post['posted'] = 'yes' : $post['posted'] = 'no';
 
     Post::create($post);
+    
+    return back()->with('status', '¡Datos guardados de forma exitosa!');
 
     }
 
