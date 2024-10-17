@@ -14,11 +14,10 @@
 
     <header>
         @include('partials.nav-bar')
+    </header>
+    <div class="container mt-4">
         @include('partials.validation-errors')
         @include('partials.messages')
-    </header>
-
-    <div class="container">
         @yield('content')
 
     </div>

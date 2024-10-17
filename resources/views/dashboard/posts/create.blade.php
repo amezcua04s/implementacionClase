@@ -2,7 +2,7 @@
 
 @section('content')
 
-<form method="POST" action="{{route('postController.store')}}">
+<form method="POST" action="{{route('post.store')}}">
     @csrf
     <div class="mb-3">
       <label for="title" class="form-label">Título</label>
