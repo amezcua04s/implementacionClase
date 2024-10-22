@@ -13,7 +13,8 @@ class PostController extends Controller
      */
     public function index()
     {   
-        $posts = Post::get();
+        $posts = Post::orderBy('created_at', 'desc')->paginate(3);
+        //$posts = Post::get();
         return view('dashboard.posts.index', compact('posts'));
     }
 
@@ -57,6 +58,8 @@ class PostController extends Controller
     public function edit(string $id)
     {
         //
+        dd($id);
+        return view('dashborad.posts.edit');   
     }
 
     /**

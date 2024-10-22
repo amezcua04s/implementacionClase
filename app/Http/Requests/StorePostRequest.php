@@ -26,7 +26,7 @@ class StorePostRequest extends FormRequest
     {
         return [
             'title' => 'required|max:500',
-            'url:clean' => 'max:20',
+            'url_clean' => 'max:20',
             'content' => '', //Es un text con posibilidad de nulo, por lo que no tiene ninguna validacion
             'posted' =>  '', //Ninguna validación pues la checkbox solo manda valores booleanos
         ];

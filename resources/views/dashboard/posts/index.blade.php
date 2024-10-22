@@ -16,7 +16,7 @@
             <th scope="col">Opciones </th> 
           </tr>
         </thead>
-        <tbody>
+        <tbody class="table-group-divider">
             @foreach ($posts as $post)
             <tr>
               <th scope="row"> {{ $post->id }} </th>
@@ -35,6 +35,10 @@
             @endforeach
           </tbody>
         </table>
+      </div>
+
+      <div class="col-12">
+        {{ $posts->links() }}
       </div>
       
 @endsection
