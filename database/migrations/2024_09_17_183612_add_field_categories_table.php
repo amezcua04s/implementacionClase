@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('url_clean', function (Blueprint $table) {
+        Schema::table('categories', function (Blueprint $table) {
             $table->string('url_clean', 500)->nullable()->after('name');
         });
     }

@@ -23,7 +23,8 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('dashboard.posts.create');
+        $post = new Post();
+        return view('dashboard.posts.create', compact('post'));
     }
 
     /**
@@ -33,11 +34,10 @@ class PostController extends Controller
     {
     //   var_dump($request);
     //dd($request);
-    // echo($request);
-    //dd($request->validated());
     $post = $request->validated();
-    $post['posted'] == 'on' ? $post['posted'] = 'yes' : $post['posted'] = 'no';
+    // $post['posted'] == 'on' ? $post['posted'] = 'yes' : $post['posted'] = 'no';
 
+    isset($post['posted']) ? $post['posted'] = 'yes' : '' ;
     Post::create($post);
     
     return back()->with('status', '¡Datos guardados de forma exitosa!');
@@ -49,32 +49,48 @@ class PostController extends Controller
      */
     public function show(string $id)
     {
-        //
+        dd($id);
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Post $post)
     {
         //
-        dd($id);
-        return view('dashborad.posts.edit');   
+        // dd($id);
+        return view('dashboard.posts.edit', compact('post'));   
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(StorePostRequest $request, Post $post)
     {
-        //
+        $data = $request->validated();
+
+        // if(isset($data['posted']) ? $data['posted'] == 'on' ?
+        //      $data['posted'] = 'yes' : $data['posted'] = 'no':
+        //       $data['posted'] = 'no');
+
+        isset($data['posted']) ? $data['posted'] = 'yes' : $data['posted'] = 'no' ;
+
+        $post->update($data);
+        
+        return back()->with('status', '¡Datos editados de forma exitosa!');
+
+        // Post::where('id', $post->id)
+        //     ->update($data);
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Post $post)
     {
-        //
+        // dd($post);
+        $post->delete();
+        return back()->with('status', '¡Datos eliminados de forma exitosa!');
+
     }
 }

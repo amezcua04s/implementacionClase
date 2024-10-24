@@ -7,3 +7,8 @@
 * Para recargas las migraciones de la base de datos
   
 ```php artisan migrate:fresh```
+
+* Para conectar con la base de datos
+ - Crear una nueva base de datos y correr el comando
+
+ ```php artisan migrate```

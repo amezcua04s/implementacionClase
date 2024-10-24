@@ -27,9 +27,12 @@
                 <a href="{{ route('post.edit', $post->id) }}" class="btn btn-secondary">
                   Editar
                 </a>
-                <a href=" {{ route('post.destroy', $post->id) }}" class="btn btn-danger">
-                  Eliminar
-                </a>
+                {{-- method="POST" <- Incluir ese parametro en form, despues de la ruta--}}
+                  <form action="{{ route('post.destroy', $post->id) }}" method="POST">
+                    @method('DELETE')
+                    @csrf
+                    <button class="btn btn-danger"> Eliminar </button>
+                  </form>
               </td>
             </tr>
             @endforeach

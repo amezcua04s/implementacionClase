@@ -2,8 +2,10 @@
 
 @section('content')
 
-<form method="POST" action="{{route('post.update'), $post->id}}">
+<form method="POST" action="{{route('post.update', $post->id )}}">
+  @method('PUT')
+  @include('partials._form')
 
-  @include('partials._form');
+</form>
 
 @endsection

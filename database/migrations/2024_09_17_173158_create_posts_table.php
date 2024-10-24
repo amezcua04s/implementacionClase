@@ -17,9 +17,9 @@ return new class extends Migration
             $table->string('url_clean', 20)->nullable();
             $table->text('content')->nullable();
             $table->enum('posted', ['yes', 'no'])->nullable()->default('no');
-            $table->unsignedBigInteger('idCategory');
+            $table->unsignedBigInteger('category_id')->nullable();
  
-            $table->foreign('idCategory')->references('id')->on('categories');
+            $table->foreign('category_id')->references('id')->on('categories');
             $table->timestamps();
         });
     }
