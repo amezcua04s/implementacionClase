@@ -12,3 +12,11 @@
  - Crear una nueva base de datos y correr el comando
 
  ```php artisan migrate```
+
+ ## Clase 29/Octubre/2024
+ * Para trabajar con la tabla de category
+ - Modelo de category
+ ```php artisan make:model Category```
+
+ - Controlador de category (NO ES NECESARIO (todavía), pero se hizo)
+```php artisan make:controller Category```
