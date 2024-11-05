@@ -9,108 +9,80 @@
     7  laravel new primerAplicacoin
     8  rm * primerAplicacoin
     9  rm -rf primerAplicacoin
-   10  create-project
-   11  create-project -h
-   12  rm -rf implementacion
-   13  composer self update
-   14  composer -v
-   15  composer clear cache
-   16  rm -rf imp*
-   17  ls -la
-   18  rm -rf im*
-   19  composer config -g process-timeout 1200000000
-   20  composer config -g process-timeout 120000000
-   21  composer config -g process-timeout 15000000
-   22  rm -rf *
-   23  laravel new implementa
-   24  laravel new implementaciones
-   25  composer config -g process-timeout 12000000000
-   26  rm -rf i*
-   27  rm -rf implementa
-   28  rm -RF implementa
-   29  rm --f implementa
-   30  rm --rf implementa
-   31  rm -r-f implementa
-   32  rm -r--f implementa
-   33  rm -rf vendor\
-   34  rm implementacion\
-   35  composer clear-cache --gc
-   36  rm -rf implementacion\
-   37  composer clear-cache
-   38  laravel new implementacin
-   39  laravel new implementacion
-   40  -o
+    1  create-project
+    1  create-project -h
+    1  rm -rf implementacion
+    1  composer self update
+    1  composer -v
+    1  composer clear cache
+    1  rm -rf imp*
+    1  ls -la
+    1  rm -rf im*
+    1  composer config -g process-timeout 1200000000
+    1  composer config -g process-timeout 120000000
+    1  composer config -g process-timeout 15000000
+    1  rm -rf *
+    1  laravel new implementa
+    1  laravel new implementaciones
+    1  composer config -g process-timeout 12000000000
+    1  rm -rf i*
+    1  rm -rf implementa
+    1  rm -RF implementa
+    1  rm --f implementa
+    1  rm --rf implementa
+    1  rm -r-f implementa
+    1  rm -r--f implementa
+    1  rm -rf vendor\
+    1  rm implementacion\
+    1  composer clear-cache --gc
+    1  rm -rf implementacion\
+    1  composer clear-cache
+    1  laravel new implementacin
+    1  laravel new implementacion
+    1  -o
    # Para crear la db
-   41  php artisan migrate
-   42  php artisan router:list
-   43  php artisan route:list
-   44  php artisan make:controller RoleController -r
-   45  php artisan r:1
-   46  php artisan make:migration create_posts_table
-   47  php artisan make:migration create_rolls_table
-   48  php artisan make:migration create_roles_table
-   49  php artisan migrate:rollback
-   50  php artisan migrate:rollback --step-2
-   51  php artisan migrate:rollback --step-3
-   52  php artisan migrate:rollback --step-0
-   53  php artisan make:migration create_categorys_table
-   54  php artisan make:migration create_categories_table
-   55  php artisan make:migration add_field_categories_table
-   56  composer funds
-   57  composer require laravel/ui --dev
-   58  php artisan ui vue
-   59  npm install
-   60  npm --version
-   61  node -v
-   62  npm install -g npm@10.8.3
-   63  npm -v
-   64  npm run dev
-   65  npm run build
-   66  npm run
-   67  php artisan serve -auth
-   68  php artisan serve --auth
-   69  php artisan ui vue --auth
-   70  npm install && npm run dev
-   71  php arytisan serve
-   72  !history
-   73      git push --set-upstream origin main
-   74  git remote add origin https://github.com/amezcua04s/implementacionClase.git git branch -M main git push -u origin main
-   75  git remote add origin https://github.com/amezcua04s/implementacionClase.git
-   76  git branch -M main
-   77  git push -u origin main
-   78  git push -u origin
-   79  git push --set-upstream origin main
-   80  git commit -m "Primer commit"
-   81  git push origin main
-   82  42
-   83  php artisan key:generation
-   84  php vendor
-   85  install vendor
-   86  cd implementacion\
-   87     14  composer self-update
-   88  composer self-update
-   89  php serve
-   90  composer install
-   91  cd implementacionClase-main\
-   92  composer update
-   93  php artisan r:2
-   94  php artisan r:0
-   95  clear
-   96  php artisan make:controller PostController
-   97  php artisan make:controller PostController -r
-   98  php artisan r:l
-   99  php artisan make:model Post
-  100  php artisan make:model Post -r
-  101  git commit -"Clase martes"
-  102  git status
-  103  git add .
-  104  git push main
-  105   php artisan make:request StorePostRequest
-  106  git set global
-  107  git push
-  108  php artisan migrate:fresh
-  109  oho artisan serve
-  110  cd ..
-  111  ls
-  112  php artisan serve
-  113  cd implementacion
+    1  php artisan migrate
+    1  php artisan router:list
+    1  php artisan route:list
+    1  php artisan make:controller RoleController -r
+    1  php artisan r:1
+    1  php artisan make:migration create_posts_table
+    1  php artisan make:migration create_rolls_table
+    1  php artisan make:migration create_roles_table
+    1  php artisan migrate:rollback
+    1  php artisan migrate:rollback --step-2
+    1  php artisan migrate:rollback --step-3
+    1  php artisan migrate:rollback --step-0
+    1  php artisan make:migration create_categorys_table
+    1  php artisan make:migration create_categories_table
+    1  php artisan make:migration add_field_categories_table
+    1  composer funds
+    1  composer require laravel/ui --dev
+    1  php artisan ui vue
+    1  npm install
+    1  npm --version
+    1  node -v
+    1  npm install -g npm@10.8.3
+    1  npm -v
+    1  npm run dev
+    1  npm run build
+    1  npm run
+    1  php artisan serve --auth
+    1  php artisan ui vue --auth
+    1  npm install && npm run dev
+    1  php artisan key:generation
+    1  php vendor
+    1  install vendor
+    1  composer self-update
+    1  composer install
+    1  composer update
+    1  php artisan r:2
+    1  php artisan r:0
+    1  php artisan make:controller PostController
+    1  php artisan make:controller PostController -r
+    1  php artisan r:l
+    1  php artisan make:model Post
+    1  php artisan make:model Post -r
+    1  php artisan make:request StorePostRequest
+    1  php artisan migrate:fresh
+    1  php artisan serve
