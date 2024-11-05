@@ -9,7 +9,7 @@
     <select class="form-select" aria-label="Categorías" name="category_id">
       <option disabled>Seleccione una categoría</option>
         @foreach ($categories as $category)
-          <option value="{{$category->id}}" @if ($post->category_id == $category->id)  'selected' @endif>
+          <option value="{{$category->id}}" @if ($post->category_id == $category->id)  selected @endif>
             {{$category->name}}
           </option>          
         @endforeach
