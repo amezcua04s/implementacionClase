@@ -16,7 +16,7 @@ class PostController extends Controller
     {   
         $posts = Post::leftJoin('categories', 'posts.category_id', '=', 'categories.id')
                 //->fullOuterJoin('joahseoif', 'asoeifiiieidjeij', asoeiufraiseo)
-                ->select('posts.*', 'categories.name as nameCategory', 'categories.id as idCategory')
+                ->select('posts.*', 'categories.name as nameCategory')
                 ->orderBy('created_at', 'desc')->paginate(6);
         //$posts = Post::get();
         return view('dashboard.posts.index', compact('posts'));
@@ -64,7 +64,8 @@ class PostController extends Controller
     {
         //
         // dd($id);
-        return view('dashboard.posts.edit', compact('post'));   
+        $categories = Category::get();
+        return view('dashboard.posts.edit', compact('post', 'categories'));   
     }
 
     /**
