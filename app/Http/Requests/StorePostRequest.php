@@ -25,6 +25,7 @@ class StorePostRequest extends FormRequest
     public function rules(): array
     {
         return [
+            'category_id' => 'required',
             'title' => 'required|max:500',
             'url_clean' => 'max:20',
             'content' => '', //Es un text con posibilidad de nulo, por lo que no tiene ninguna validacion
@@ -43,6 +44,7 @@ class StorePostRequest extends FormRequest
             'title.required' => 'Se esperaba un título',
             'title.max' => 'El máximo de caracteres es 500',
             'url_clean.max' => 'El máxmio de caracteres es de 20',
+            'category_id.required' => 'Se esperaba una categoría',
             
         ];
     }

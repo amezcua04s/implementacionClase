@@ -14,7 +14,10 @@ class PostController extends Controller
      */
     public function index()
     {   
-        $posts = Post::orderBy('created_at', 'desc')->paginate(3);
+        $posts = Post::leftJoin('categories', 'posts.category_id', '=', 'categories.id')
+                //->fullOuterJoin('joahseoif', 'asoeifiiieidjeij', asoeiufraiseo)
+                ->select('posts.*', 'categories.name as nameCategory', 'categories.id as idCategory')
+                ->orderBy('created_at', 'desc')->paginate(6);
         //$posts = Post::get();
         return view('dashboard.posts.index', compact('posts'));
     }

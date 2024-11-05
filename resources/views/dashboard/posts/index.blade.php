@@ -11,6 +11,7 @@
           <tr>
             <th scope="col">ID</th>
             <th scope="col">Título</th>
+            <th scope="col">Categoría</th>
             <th scope="col">URL</th>
             <th scope="col">Publicado</th>
             <th scope="col">Opciones </th> 
@@ -19,8 +20,9 @@
         <tbody class="table-group-divider">
             @foreach ($posts as $post)
             <tr>
-              <th scope="row"> {{ $post->id }} </th>
+              <th scope="rowgroup"> {{ $post->id }} </th>
               <td> {{ $post->title }} </td>
+              <td> {{ $post->nameCategory}} </td>
               <td> {{ $post->url_clean }} </td>
               <td> {{ $post->posted }} </td>
               <td>
