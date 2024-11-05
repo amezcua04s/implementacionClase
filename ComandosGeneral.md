@@ -1,14 +1,14 @@
 # Comandos en general del programa
 
     1  pwd
-    2  composer
-    3  larabelk
-    4  larabel
-    5  laravel
-    6  composer global require laravel/installer
-    7  laravel new primerAplicacoin
-    8  rm * primerAplicacoin
-    9  rm -rf primerAplicacoin
+    1  composer
+    1  larabelk
+    1  larabel
+    1  laravel
+    1  composer global require laravel/installer
+    1  laravel new primerAplicacoin
+    1  rm * primerAplicacoin
+    1  rm -rf primerAplicacoin
     1  create-project
     1  create-project -h
     1  rm -rf implementacion
