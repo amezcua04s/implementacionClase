@@ -16,7 +16,15 @@
  ## Clase 29/Octubre/2024
  * Para trabajar con la tabla de category
  - Modelo de category
+
  ```php artisan make:model Category```
 
  - Controlador de category (NO ES NECESARIO (todavía), pero se hizo)
+
 ```php artisan make:controller Category```
+
+## Clase 12/Noviembre/2024
+* Para hacer los middleware
+- Crear un middleware AdminAuthenticate
+
+``php artisan make:middleware AdminAuthenticate``

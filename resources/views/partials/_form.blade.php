@@ -7,7 +7,7 @@
   <div class="mb-3 col-sm-12 col-md-6 col-xl-3">
     <label for="ur_clean" class="form-label">Categoría</label>
     <select class="form-select" aria-label="Categorías" name="category_id">
-      <option disabled>Seleccione una categoría</option>
+      <option selected disabled>Seleccione una categoría</option>
         @foreach ($categories as $category)
           <option value="{{$category->id}}" @if ($post->category_id == $category->id)  selected @endif>
             {{$category->name}}
