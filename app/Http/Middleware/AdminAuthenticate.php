@@ -18,13 +18,12 @@ class AdminAuthenticate
     public function handle(Request $request, Closure $next): Response
     {   
         if(Auth::user()){
-            if(Auth::user()->role_id != 1){
-                return redirect('home');                
-            } else {
+            if(Auth::user()->role_id == 1){
                 return $next($request);
             }
-        } else {
-            return redirect('home');
         }
+        
+        return redirect('/home');
+
     }
 }

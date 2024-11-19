@@ -14,8 +14,8 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware) {
         
-        $middleware->append(AdminAuthenticate::class);
-
+        //$middleware->append(AdminAuthenticate::class);
+        
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
