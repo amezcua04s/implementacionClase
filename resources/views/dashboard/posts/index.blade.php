@@ -24,7 +24,7 @@
               <td> {{ $post->title }} </td>
               <td> {{ $post->nameCategory}} </td>
               <td> {{ $post->url_clean }} </td>
-              <td> {{ $post->posted }} </td>
+              <td> {{ $post->publicado }} </td>
               <td>
                 <a href="{{ route('post.edit', $post->id) }}" class="btn btn-secondary">
                   Editar

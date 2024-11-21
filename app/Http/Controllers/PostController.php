@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StorePostRequest;
 use App\Models\Category;
 use App\Models\Post;
-use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
@@ -21,7 +20,12 @@ class PostController extends Controller
         $posts = Post::leftJoin('categories', 'posts.category_id', '=', 'categories.id')
                 //->fullOuterJoin('joahseoif', 'asoeifiiieidjeij', asoeiufraiseo)
                 ->select('posts.*', 'categories.name as nameCategory')
-                ->orderBy('created_at', 'desc')->paginate(6);
+                ->selectRaw("CASE 
+                                WHEN posts.posted = 'yes' THEN 'Sí'
+                                WHEN posts.posted = 'no' THEN 'No'
+                            END AS publicado")
+  
+                ->orderBy('created_at', 'desc')->paginate(10);
         //$posts = Post::get();
         return view('dashboard.posts.index', compact('posts'));
     }

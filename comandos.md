@@ -51,3 +51,11 @@
 >Para correr todos los seeders que esten señalados en el archivo DatabaseSeeder
 
 ``php artisan db:seed``
+
+## Clase 21/Noviembre/2024
+* Factory de Post
+
+``php artisan make:factory PostFactory``
+
+* Seeder de Post
+``php artisan make:seeder PostSeeder``
