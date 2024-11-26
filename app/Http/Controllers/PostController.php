@@ -82,11 +82,7 @@ class PostController extends Controller
     public function update(StorePostRequest $request, Post $post)
     {
         $data = $request->validated();
-
-        // if(isset($data['posted']) ? $data['posted'] == 'on' ?
-        //      $data['posted'] = 'yes' : $data['posted'] = 'no':
-        //       $data['posted'] = 'no');
-
+        
         isset($data['posted']) ? $data['posted'] = 'yes' : $data['posted'] = 'no' ;
 
         $post->update($data);
